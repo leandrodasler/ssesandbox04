@@ -1,0 +1,25 @@
+{
+  "store.custom#registration": {
+    "children": [
+      "flex-layout.row#title-client-registration",
+      "flex-layout.row#form-client-registration"
+    ]
+  },
+  "flex-layout.row#title-client-registration": {
+    "children": ["rich-text#title-client-registration"]
+  },
+  "rich-text#title-client-registration": {
+    "props": {
+      "text": "Cadastro de Novo Usuário"
+    }
+  },
+  "flex-layout.row#form-client-registration": {
+    "children": ["form#form-client-registration"]
+  },
+  "form#form-client-registration": {
+    "props": {
+      "entity": "client",
+      "schema": "client_registration"
+    }
+  }
+}
