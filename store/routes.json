@@ -10,5 +10,8 @@
   },
   "store.custom#registration": {
     "path": "/cadastro"
+  },
+  "store.custom#certificate": {
+    "path": "/certificado"
   }
 }

@@ -111,3 +111,10 @@
   font-weight: bold;
   font-size: 30px;
 }
+
+.container :global(.vtex-dropdown),
+.container :global(.vtex-input) {
+  display: block;
+  margin-bottom: 1rem;
+  width: 50vw;
+}

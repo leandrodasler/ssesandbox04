@@ -6,7 +6,7 @@
       "flex-layout.row#description",
       "flex-layout.row#specifications-title",
       "product-specification-group#table",
-      "shelf.relatedProducts",
+      "shelf.relatedProducts#suggestions",
       "product-reviews",
       "product-questions-and-answers"
     ]
@@ -16,7 +16,7 @@
   },
   "rich-text#specifications": {
     "props": {
-      "text": "##### Product Specifications"
+      "text": "##### Especificações do produto"
     }
   },
   "flex-layout.row#product-breadcrumb": {
@@ -180,5 +180,23 @@
         "Pinterest": true
       }
     }
+  },
+
+  "shelf.relatedProducts#suggestions": {
+    "blocks": ["product-summary.shelf"],
+    "props": {
+      "recommendation": "suggestions",
+      "productList": {
+        "maxItems": 10,
+        "itemsPerPage": 4,
+        "minItemsPerPage": 1,
+        "scroll": "ONE_BY_PAGE",
+        "arrows": true,
+        "showTitle": true,
+        "paginationDotsVisibility": "never",
+        "titleText": "Sugestões"
+      }
+    },
+    "title": "Produtos Relacionados - Sugestões"
   }
 }

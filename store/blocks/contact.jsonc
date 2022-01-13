@@ -37,7 +37,7 @@
     "children": [
       "form-input.text#title",
       "form-input.text#name",
-      "form-input.text#email",
+      "form-input.text#email-contact",
       "form-input.textarea#message",
       "form-submit#contact"
     ]
@@ -45,10 +45,10 @@
 
   "form-success#contact-us": {
     "children": [
-      "rich-text#success-submit"
+      "rich-text#success-submit-contact"
     ]
   },
-  "rich-text#success-submit": {
+  "rich-text#success-submit-contact": {
     "props": {
       "text": "Thanks for reaching out! We will come back shortly.",
       "textAlignment": "CENTER",
@@ -66,7 +66,7 @@
       "pointer": "#/properties/name"
     }
   },
-  "form-input.text#email": {
+  "form-input.text#email-contact": {
     "props": {
       "pointer": "#/properties/email"
     }

@@ -1,0 +1,78 @@
+{
+  "store.custom#certificate": {
+    "children": [
+      "flex-layout.row#title-client-certificate",
+      "flex-layout.row#form-client-certificate"
+    ]
+  },
+  "flex-layout.row#title-client-certificate": {
+    "children": ["rich-text#title-client-certificate"]
+  },
+  "rich-text#title-client-certificate": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "## Cadastro de Certificado"
+    }
+  },
+  "flex-layout.row#form-client-certificate": {
+    "children": ["flex-layout.col#form-client-certificate"]
+  },
+  "flex-layout.col#form-client-certificate": {
+    "props": {
+      "horizontalAlign": "center"
+    },
+    "children": ["form#form-client-certificate"]
+  },
+  "form#form-client-certificate": {
+    "props": {
+      "entity": "clients",
+      "schema": "certificate"
+    },
+    "children": [
+      "form-input.text#certificate-email",
+      "form-input.upload#certificate-file",
+      "form-submit#certificate"
+    ],
+    "blocks": ["form-success#certificate"]
+  },
+  "form-input.text#certificate-email": {
+    "props": {
+      "pointer": "#/properties/certificateEmail"
+    }
+  },
+  "form-input.upload#certificate-file": {
+    "props": {
+      "pointer": "#/properties/certificateFile",
+      "accept": ".pdf"
+    }
+  },
+  "form-submit#certificate": {
+    "props": {
+      "label": "Enviar"
+    }
+  },
+  "form-success#certificate": {
+    "children": [
+      "rich-text#success-submit-certificate",
+      "link#return-certificate"
+    ]
+  },
+  "rich-text#success-submit-certificate": {
+    "props": {
+      "text": "Certificado enviado com sucesso",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER"
+    }
+  },
+  "link#return-certificate": {
+    "props": {
+      "label": "Retornar para a loja",
+      "href": "/",
+      "displayMode": "button",
+      "buttonProps": {
+        "variant": "secondary"
+      }
+    }
+  }
+}

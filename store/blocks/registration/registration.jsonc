@@ -10,16 +10,101 @@
   },
   "rich-text#title-client-registration": {
     "props": {
-      "text": "Cadastro de Novo Usuário"
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "## Cadastro de Novo Comprador"
     }
   },
   "flex-layout.row#form-client-registration": {
+    "children": ["flex-layout.col#form-client-registration"]
+  },
+  "flex-layout.col#form-client-registration": {
+    "props": {
+      "horizontalAlign": "center"
+    },
     "children": ["form#form-client-registration"]
   },
   "form#form-client-registration": {
     "props": {
-      "entity": "client",
-      "schema": "client_registration"
+      "entity": "clients",
+      "schema": "registration"
+    },
+    "children": [
+      "form-input.dropdown#category",
+      "form-input.dropdown#membershipClub",
+      "form-input.text#firstName",
+      "form-input.text#lastName",
+      "form-input.text#email",
+      "form-input.text#cpf",
+      "form-input.text#rg",
+      "form-field-group#address",
+      "form-submit"
+    ],
+    "blocks": ["form-success"]
+  },
+  "form-input.dropdown#category": {
+    "props": {
+      "pointer": "#/properties/category"
+    }
+  },
+  "form-input.dropdown#membershipClub": {
+    "props": {
+      "pointer": "#/properties/membershipClub"
+    }
+  },
+  "form-input.text#firstName": {
+    "props": {
+      "pointer": "#/properties/firstName"
+    }
+  },
+  "form-input.text#lastName": {
+    "props": {
+      "pointer": "#/properties/lastName"
+    }
+  },
+  "form-input.text#email": {
+    "props": {
+      "pointer": "#/properties/email"
+    }
+  },
+  "form-input.text#cpf": {
+    "props": {
+      "pointer": "#/properties/cpf"
+    }
+  },
+  "form-input.text#rg": {
+    "props": {
+      "pointer": "#/properties/rg"
+    }
+  },
+  "form-field-group#address": {
+    "props": {
+      "pointer": "#/properties/address"
+    }
+  },
+  "form-submit": {
+    "props": {
+      "label": "Enviar"
+    }
+  },
+  "form-success": {
+    "children": ["rich-text#success-submit", "link#return-registration"]
+  },
+  "rich-text#success-submit": {
+    "props": {
+      "text": "Cadastro enviado com sucesso",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER"
+    }
+  },
+  "link#return-registration": {
+    "props": {
+      "label": "Retornar para a loja",
+      "href": "/",
+      "displayMode": "button",
+      "buttonProps": {
+        "variant": "secondary"
+      }
     }
   }
 }
