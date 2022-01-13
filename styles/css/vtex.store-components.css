@@ -112,8 +112,9 @@
   font-size: 30px;
 }
 
-.container :global(.vtex-dropdown),
-.container :global(.vtex-input) {
+.container :local(form > ) :global(.vtex-dropdown),
+.container :local(form > ) :global(.vtex-input),
+.container :local(form > div > ) :global(.vtex-input) {
   display: block;
   margin-bottom: 1rem;
   width: 50vw;
