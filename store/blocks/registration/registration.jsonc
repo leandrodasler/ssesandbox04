@@ -37,6 +37,11 @@
       "form-input.text#email",
       "form-input.text#cpf",
       "form-input.text#rg",
+      "form-input.text#patent",
+      "form-input.text#company",
+      "rich-text#companyAddress",
+      "form-field-group#companyAddress",
+      "rich-text#address",
       "form-field-group#address",
       "form-submit"
     ],
@@ -67,6 +72,26 @@
       "pointer": "#/properties/email"
     }
   },
+  "form-input.text#patent": {
+    "props": {
+      "pointer": "#/properties/patent"
+    }
+  },
+  "rich-text#companyAddress": {
+    "props": {
+      "text": "**Endereço da empresa/órgão**"
+    }
+  },
+  "form-field-group#companyAddress": {
+    "props": {
+      "pointer": "#/properties/companyAddress"
+    }
+  },
+  "form-input.text#company": {
+    "props": {
+      "pointer": "#/properties/company"
+    }
+  },
   "form-input.text#cpf": {
     "props": {
       "pointer": "#/properties/cpf"
@@ -75,6 +100,11 @@
   "form-input.text#rg": {
     "props": {
       "pointer": "#/properties/rg"
+    }
+  },
+  "rich-text#address": {
+    "props": {
+      "text": "**Endereço pessoal**"
     }
   },
   "form-field-group#address": {

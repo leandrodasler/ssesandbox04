@@ -12,19 +12,6 @@
   "scripts": {
     "postreleasy": "vtex publish --verbose"
   },
-  "credentialType": "absolute",
-  "policies": [
-    {
-      "name": "ADMIN_DS"
-    },
-    {
-      "name": "outbound-access",
-      "attrs": {
-        "host": "api.vtex.com",
-        "path": "/dataentities/*"
-      }
-    }
-  ],
   "dependencies": {
     "vtex.store": "2.x",
     "vtex.store-header": "2.x",
@@ -75,7 +62,8 @@
     "vtex.product-specifications": "1.x",
     "vtex.tab-layout": "0.x",
     "vtex.condition-layout": "2.x",
-    "vtex.css-handles": "1.x"
+    "vtex.css-handles": "1.x",
+    "bravtexgrocerystore.bravtexgrocery-newcomponents": "0.4.7"
   },
   "peerDependencies": {
     "vtex.reviews-and-ratings": "2.x"

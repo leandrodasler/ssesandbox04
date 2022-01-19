@@ -30,22 +30,58 @@
       "schema": "certificate"
     },
     "children": [
-      "form-input.text#certificate-email",
-      "form-input.upload#certificate-file",
-      "form-submit#certificate"
+      "form-input.text#certificateEmail",
+      "form-input.text#certificateNumber",
+      "flex-layout.row#certificateDates",
+      "form-input.text#certificateIssuerOrganization",
+      "form-input.upload#certificateFile",
+      "flex-layout.row#buttons-form-client-certificate"
     ],
     "blocks": ["form-success#certificate"]
   },
-  "form-input.text#certificate-email": {
+  "form-input.text#certificateEmail": {
     "props": {
       "pointer": "#/properties/certificateEmail"
     }
   },
-  "form-input.upload#certificate-file": {
+  "form-input.text#certificateNumber": {
+    "props": {
+      "pointer": "#/properties/certificateNumber"
+    }
+  },
+  "flex-layout.row#certificateDates": {
+    "props": {
+      "colGap": 5,
+      "marginBottom": 5
+    },
+    "children": [
+      "form-input.text#certificateDateBegin",
+      "form-input.text#certificateDateEnd"
+    ]
+  },
+  "form-input.text#certificateDateBegin": {
+    "props": {
+      "pointer": "#/properties/certificateDateBegin"
+    }
+  },
+  "form-input.text#certificateDateEnd": {
+    "props": {
+      "pointer": "#/properties/certificateDateEnd"
+    }
+  },
+  "form-input.text#certificateIssuerOrganization": {
+    "props": {
+      "pointer": "#/properties/certificateIssuerOrganization"
+    }
+  },
+  "form-input.upload#certificateFile": {
     "props": {
       "pointer": "#/properties/certificateFile",
       "accept": ".pdf"
     }
+  },
+  "flex-layout.row#buttons-form-client-certificate": {
+    "children": ["form-submit#certificate", "link#return-certificate"]
   },
   "form-submit#certificate": {
     "props": {
@@ -67,8 +103,8 @@
   },
   "link#return-certificate": {
     "props": {
-      "label": "Retornar para a loja",
-      "href": "/",
+      "label": "Retornar para Meus certificados",
+      "href": "/account#/certificates",
       "displayMode": "button",
       "buttonProps": {
         "variant": "secondary"
