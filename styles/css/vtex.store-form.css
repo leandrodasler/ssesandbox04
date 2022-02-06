@@ -1,0 +1,4 @@
+.formErrorUserInput :global(.vtex-alert),
+.formErrorServer :global(.vtex-alert) {
+  margin-top: 0.75rem;
+}
