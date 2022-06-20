@@ -124,7 +124,7 @@
   },
   "flex-layout.col#priceSummaryListDesktop": {
     "children": [
-      "product-selling-price#summary",
+      "product-selling-price-range#summary",
       "product-list-price#summary"
     ]
   },
@@ -197,7 +197,7 @@
       "preventVerticalStretch": true
     },
     "children": [
-      "product-selling-price#summary",
+      "product-selling-price-range#summary",
       "product-installments#summary"
     ]
   },

@@ -6,9 +6,17 @@
       "preventHorizontalStretch": true,
       "marginBottom": 4
     },
-    "children": [
-      "product-selling-price"
-    ]
+    "children": ["product-selling-price-range"]
+  },
+
+  "flex-layout.row#sku-price-range": {
+    "props": {
+      "colGap": 2,
+      "preserveLayoutOnMobile": true,
+      "preventHorizontalStretch": true,
+      "marginBottom": 4
+    },
+    "children": ["sku-price-range"]
   },
 
   "flex-layout.row#list-price-savings": {
@@ -19,9 +27,13 @@
       "marginBottom": 2,
       "marginTop": 5
     },
-    "children": [
-      "product-list-price",
-      "product-price-savings"
-    ]
+    "children": ["product-list-price", "product-price-savings"]
+  },
+
+  "product-selling-price-range": {
+    "props": {
+      "alwaysShow": true/* ,
+      "message": "a partir de {minPriceValue}, até {maxPriceValue}" */
+    }
   }
 }

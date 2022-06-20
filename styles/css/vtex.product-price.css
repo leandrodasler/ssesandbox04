@@ -4,12 +4,16 @@
   font-size: 1rem;
 }
 
-.sellingPrice {
+.sellingPrice,
+.sellingPriceRange {
   color: #3f3f40;
   font-size: 1.25rem;
 }
 
-.sellingPriceValue {
+.sellingPriceValue,
+.sellingPriceRangeUniqueValue,
+.sellingPriceRangeMinValue,
+.sellingPriceRangeMaxValue {
   font-size: 2.25rem;
   font-weight: 700;
 }
@@ -24,7 +28,10 @@
   color: #79B03A;
 }
 
-.sellingPriceValue--summary {
+.sellingPriceValue--summary,
+.sellingPriceRangeUniqueValue--summary,
+.sellingPriceRangeMinValue--summary,
+.sellingPriceRangeMaxValue--summary {
   font-size: 1.25rem;
   font-weight: 600;
   color: #2E2E2E;

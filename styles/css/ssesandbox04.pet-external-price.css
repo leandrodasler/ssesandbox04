@@ -1,0 +1,8 @@
+.skuPriceContainer,
+.skuPriceRangeContainer {
+  font-size: 2.25rem;
+}
+
+.skuPriceContainer {
+  height: 100px;
+}

@@ -65,7 +65,7 @@
       "marginBottom": 4
     },
     "children": [
-      "product-selling-price#summary",
+      "product-selling-price-range#summary",
       "product-price-savings#summary"
     ]
   },
@@ -74,9 +74,10 @@
       "blockClass": "summary"
     }
   },
-  "product-selling-price#summary": {
+  "product-selling-price-range#summary": {
     "props": {
-      "blockClass": "summary"
+      "blockClass": "summary",
+      "alwaysShow": true
     }
   },
   "product-price-savings#summary": {

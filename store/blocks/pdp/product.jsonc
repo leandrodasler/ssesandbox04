@@ -98,15 +98,22 @@
       "preventVerticalStretch": true,
       "rowGap": 0
     },
+    "children": ["external-price-context"]
+  },
+
+  "external-price-context": {
     "children": [
       "flex-layout.row#product-name",
       "product-rating-summary",
       "flex-layout.row#list-price-savings",
       "flex-layout.row#selling-price",
+      "flex-layout.row#sku-price-range",
       "product-installments",
       "product-separator",
       "product-identifier.product",
       "sku-selector",
+      "condition-layout.product#selling-price",
+      "sku-current-price",
       "product-quantity",
       "product-assembly-options",
       "product-gifts",
@@ -117,18 +124,31 @@
     ]
   },
 
+  "condition-layout.product#selling-price": {
+    "props": {
+      "conditions": [
+        {
+          "subject": "specificationProperties",
+          "arguments": {
+            "name": "Query external price?"
+          }
+        }
+      ],
+      "Then": "product-selling-price"
+    }
+  },
+
+  "product-selling-price": {
+    "props": {
+      "message": "por {sellingPriceValue}"
+    }
+  },
+
   "flex-layout.row#product-name": {
     "props": {
       "marginBottom": 3
     },
     "children": ["vtex.store-components:product-name"]
-  },
-
-  "sku-selector": {
-    "props": {
-      "variationsSpacing": 3,
-      "showValueNameForImageVariation": true
-    }
   },
 
   "flex-layout.row#buy-button": {
@@ -190,7 +210,7 @@
         "maxItems": 10,
         "itemsPerPage": 4,
         "minItemsPerPage": 1,
-        "scroll": "ONE_BY_PAGE",
+        "scroll": "ONE_BY_ONE",
         "arrows": true,
         "showTitle": true,
         "paginationDotsVisibility": "never",
