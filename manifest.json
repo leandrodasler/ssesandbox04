@@ -1,7 +1,7 @@
 {
   "vendor": "ssesandbox04",
   "name": "store-theme",
-  "version": "4.4.7",
+  "version": "4.4.8",
   "builders": {
     "styles": "2.x",
     "store": "0.x",
