@@ -8,6 +8,7 @@
       "flex-layout.row#deals",
       "rich-text#shelf-title",
       "flex-layout.row#shelf",
+      "flex-layout.row#shelf-2",
       "info-card#home",
       "rich-text#question",
       "rich-text#link",
@@ -60,6 +61,18 @@
       "orderBy": "OrderByTopSaleDESC"
     }
   },
+
+  "flex-layout.row#shelf-2": {
+    "children": ["list-context.product-list#demo2"]
+  },
+  "list-context.product-list#demo2": {
+    "blocks": ["product-summary.shelf"],
+    "children": ["slider-layout#demo-products"],
+    "props": {
+      "orderBy": "OrderByReleaseDateDESC"
+    }
+  },
+
   "slider-layout#demo-products": {
     "props": {
       "itemsPerPage": {

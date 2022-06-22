@@ -1,8 +1,25 @@
 .skuPriceContainer,
 .skuPriceRangeContainer {
-  font-size: 2.25rem;
+  color: #3f3f40;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  height: 50px;
+}
+
+.skuPriceRangeContainer,
+.skuPriceContainer {
+  font-size: 1.25rem;
 }
 
 .skuPriceContainer {
-  height: 100px;
+  margin-bottom: 1rem;
+}
+
+.skuPriceRangeContainer .currencyContainer {
+  font-size: 2.25rem;
+}
+
+.skuPriceContainer .currencyContainer {
+  font-size: 1.65rem;
 }

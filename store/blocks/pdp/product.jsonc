@@ -106,13 +106,10 @@
       "flex-layout.row#product-name",
       "product-rating-summary",
       "flex-layout.row#list-price-savings",
-      "flex-layout.row#selling-price",
-      "flex-layout.row#sku-price-range",
-      "product-installments",
+      "condition-layout.product#selling-price",
       "product-separator",
       "product-identifier.product",
       "sku-selector",
-      "condition-layout.product#selling-price",
       "sku-current-price",
       "product-quantity",
       "product-assembly-options",
@@ -134,7 +131,8 @@
           }
         }
       ],
-      "Then": "product-selling-price"
+      "Then": "flex-layout.row#sku-price-range",
+      "Else": "flex-layout.row#selling-price"
     }
   },
 

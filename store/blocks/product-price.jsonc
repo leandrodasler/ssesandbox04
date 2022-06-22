@@ -6,7 +6,14 @@
       "preventHorizontalStretch": true,
       "marginBottom": 4
     },
-    "children": ["product-selling-price-range"]
+    "children": ["flex-layout.col#selling-price"]
+  },
+
+  "flex-layout.col#selling-price": {
+    "props": {
+      "rowGap": 4
+    },
+    "children": ["product-selling-price-range", "product-installments"]
   },
 
   "flex-layout.row#sku-price-range": {
@@ -28,12 +35,5 @@
       "marginTop": 5
     },
     "children": ["product-list-price", "product-price-savings"]
-  },
-
-  "product-selling-price-range": {
-    "props": {
-      "alwaysShow": true/* ,
-      "message": "a partir de {minPriceValue}, até {maxPriceValue}" */
-    }
   }
 }
